@@ -5,14 +5,28 @@
  */
 
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { View, StyleSheet, Text, Button } from 'react-native';
 
 const styles = StyleSheet.create({
-    categoryMealsScreen: {}
+  categoryMealsScreen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
 
-const CategoryMealsScreen = () => {
-    return <View style={styles.categoryMealsScreen}>/**@todo add code here */</View>;
+const CategoryMealsScreen = ({ navigation }) => {
+  return (
+    <View style={styles.categoryMealsScreen}>
+      <Text>Category Meals Screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => {
+          navigation.navigate('MealDetail');
+        }}
+      />
+    </View>
+  );
 };
 
 export default CategoryMealsScreen;

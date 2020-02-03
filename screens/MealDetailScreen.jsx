@@ -5,14 +5,22 @@
  */
 
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 const styles = StyleSheet.create({
-    mealDetailScreen: {}
+  mealDetailScreen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
 
 const MealDetailScreen = () => {
-    return <View style={styles.mealDetailScreen}>/**@todo add code here */</View>;
+  return (
+    <View style={styles.mealDetailScreen}>
+      <Text>Meal Detail Screen</Text>
+    </View>
+  );
 };
 
 export default MealDetailScreen;
