@@ -6,6 +6,13 @@
     "prettier/react"
   ],
   "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".json", ".native.js"]
+      }
+    }
+  },
   "parserOptions": {
     "ecmaVersion": 10,
     "sourceType": "module",
