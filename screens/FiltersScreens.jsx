@@ -5,14 +5,22 @@
  */
 
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 const styles = StyleSheet.create({
-    filtersScreens: {}
+  filtersScreens: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
 
 const FiltersScreens = () => {
-    return <View style={styles.filtersScreens}>/**@todo add code here */</View>;
+  return (
+    <View style={styles.filtersScreens}>
+      <Text>Category Meals Screen</Text>
+    </View>
+  );
 };
 
 export default FiltersScreens;

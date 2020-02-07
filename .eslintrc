@@ -6,6 +6,13 @@
     "prettier/react"
   ],
   "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".json", ".native.js"]
+      }
+    }
+  },
   "parserOptions": {
     "ecmaVersion": 10,
     "sourceType": "module",
@@ -33,7 +40,8 @@
       }
     ],
     "react/prop-types": 0,
-    "react/jsx-props-no-spreading": 0
+    "react/jsx-props-no-spreading": 0,
+    "global-require": 0
   },
   "plugins": [
     "prettier"

@@ -5,14 +5,18 @@
  */
 
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { FlatList } from 'react-native';
+import { CATEGORIES } from '../data/dummy-data';
+import CategoryGridTile from '../components/CategoryGridTile';
 
-const styles = StyleSheet.create({
-    categoriesScreen: {}
-});
-
-const CategoriesScreen = () => {
-    return <View style={styles.categoriesScreen}>/**@todo add code here */</View>;
+const CategoriesScreen = ({ navigation }) => {
+  return (
+    <FlatList
+      data={CATEGORIES}
+      renderItem={itemData => <CategoryGridTile itemData={itemData} navigation={navigation} />}
+      numColumns={2}
+    />
+  );
 };
 
 export default CategoriesScreen;
